@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+requests
+google-generativeai
+sqlalchemy
+python-dotenv
+bandit
+pylint
+psycopg2-binary
