@@ -114,24 +114,24 @@ POST https://your-server.com/webhook/github
 
 ```
 SenSight/
-├── app.py                          # FastAPI application entry point
+├── app.py                         
 ├── config/
-│   └── settings.py                 # Configuration management
+│   └── settings.py                 
 ├── models/
-│   └── database.py                 # Database models and initialization
+│   └── database.py                 
 ├── services/
-│   ├── github_service.py           # GitHub API interactions
-│   ├── code_analysis_service.py    # Static analysis (Bandit, Pylint)
-│   ├── ai_service.py               # Gemini AI integration
-│   └── context_service.py          # Task context extraction
+│   ├── github_service.py           
+│   ├── code_analysis_service.py    
+│   ├── ai_service.py               
+│   └── context_service.py          
 ├── utils/
-│   ├── diff_parser.py              # Git diff parsing utilities
-│   └── code_inspector.py           # Code context analysis
+│   ├── diff_parser.py              
+│   └── code_inspector.py           
 ├── routers/
-│   └── webhook.py                  # Webhook endpoint handlers
-├── requirements.txt                # Python dependencies
-├── .env.example                    # Example environment variables
-└── README.md                       # Project documentation
+│   └── webhook.py                  
+├── requirements.txt                
+├── .env                    
+└── README.md                       
 ```
 
 ---
@@ -140,7 +140,7 @@ SenSight/
 
 - **Local LLM Training**: Use stored reviews to train or fine-tune a smaller Hugging Face model, reducing dependency on API calls.
 - **Multi-Language Support**: Extend PR analysis to JavaScript, Java, and other languages.
-- **Automated Suggestions**: Create auto-generated PR comments or GitHub checks based on AI review.
+- **Inline code comments**: Automatically generate context-aware suggestions and explanations directly within the changed lines of code.
 - **Interactive Dashboard**: Visualize PR trends, code quality metrics, and common issues over time.
 - **Enhanced Context Understanding**: Use code embeddings for better cross-file and project-level insights.
 - **Configurable Rules**: Allow teams to define custom code quality or security rules.
